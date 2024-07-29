@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03BD4AAA2B3CB26000341CE2 /* SwiftBankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BD4AA92B3CB26000341CE2 /* SwiftBankApp.swift */; };
+		03BD4AAE2B3CB26400341CE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03BD4AAD2B3CB26400341CE2 /* Assets.xcassets */; };
+		03BD4AB12B3CB26400341CE2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03BD4AB02B3CB26400341CE2 /* Preview Assets.xcassets */; };
+		03BD4ABD2B3CC72000341CE2 /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BD4ABC2B3CC72000341CE2 /* BalanceView.swift */; };
+		03E5D8DD2B40D79A00B9BC9A /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E5D8DC2B40D79A00B9BC9A /* CreditCardView.swift */; };
+		03E5D8E02B4213BD00B9BC9A /* GenericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E5D8DF2B4213BD00B9BC9A /* GenericView.swift */; };
+		03E5D8E82B425BC700B9BC9A /* ActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E5D8E72B425BC700B9BC9A /* ActivitiesView.swift */; };
+		03E5D8EE2B45E20F00B9BC9A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E5D8ED2B45E20F00B9BC9A /* HomeViewModel.swift */; };
+		03E5D8F42B45E32B00B9BC9A /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E5D8F32B45E32B00B9BC9A /* Endpoint.swift */; };
+		03E5D8F62B45E48A00B9BC9A /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E5D8F52B45E48A00B9BC9A /* RequestMethod.swift */; };
+		03E5D8F82B45E4F400B9BC9A /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E5D8F72B45E4F400B9BC9A /* RequestError.swift */; };
+		03E5D8FA2B45E50D00B9BC9A /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E5D8F92B45E50D00B9BC9A /* HTTPClient.swift */; };
+		03E5D8FC2B45E52F00B9BC9A /* HomeEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E5D8FB2B45E52F00B9BC9A /* HomeEndpoint.swift */; };
+		03E5D8FE2B45E64800B9BC9A /* HomeNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E5D8FD2B45E64800B9BC9A /* HomeNetworkingService.swift */; };
+		03E5D9002B45F3C800B9BC9A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E5D8FF2B45F3C800B9BC9A /* HomeView.swift */; };
+		09E5DF8D5D4CCC73B7463B7E /* Pods_SwiftBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5AA9D696F0795121CC2D6B /* Pods_SwiftBank.framework */; };
+		982BB44D2C50049B00AE59E0 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BB44C2C50049B00AE59E0 /* HomeModel.swift */; };
+		982BB44F2C5004AF00AE59E0 /* TextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BB44E2C5004AF00AE59E0 /* TextModel.swift */; };
+		982BB4512C512F7A00AE59E0 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BB4502C512F7A00AE59E0 /* SectionModel.swift */; };
+		982BB4562C51320600AE59E0 /* DictionaryDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BB4552C51320600AE59E0 /* DictionaryDecodable.swift */; };
+		982BB4592C51390000AE59E0 /* BalanceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BB4582C51390000AE59E0 /* BalanceResponse.swift */; };
+		982BB45B2C513B9500AE59E0 /* GenericSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BB45A2C513B9500AE59E0 /* GenericSectionView.swift */; };
+		982BB45D2C513BD200AE59E0 /* BalanceSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BB45C2C513BD200AE59E0 /* BalanceSection.swift */; };
+		982BB4602C52991D00AE59E0 /* CreditCardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BB45F2C52991D00AE59E0 /* CreditCardResponse.swift */; };
+		982BB4622C5299DB00AE59E0 /* CreditCardSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BB4612C5299DB00AE59E0 /* CreditCardSection.swift */; };
+		982BB4652C529F7400AE59E0 /* GenericSectionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BB4642C529F7400AE59E0 /* GenericSectionResponse.swift */; };
+		982BB4672C529FCA00AE59E0 /* GenericSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BB4662C529FCA00AE59E0 /* GenericSection.swift */; };
+		982BB46B2C541E4C00AE59E0 /* NavigationRounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BB46A2C541E4C00AE59E0 /* NavigationRounter.swift */; };
+		982BB46D2C54205200AE59E0 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BB46C2C54205200AE59E0 /* Route.swift */; };
+		982BB46F2C54210400AE59E0 /* PixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BB46E2C54210400AE59E0 /* PixView.swift */; };
+		982BB4712C54248E00AE59E0 /* RouterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BB4702C54248E00AE59E0 /* RouterHandler.swift */; };
+		982BB4732C57FAE500AE59E0 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BB4722C57FAE500AE59E0 /* URLExtension.swift */; };
+		982BB4752C58020100AE59E0 /* GenericErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BB4742C58020100AE59E0 /* GenericErrorView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03BD4AA62B3CB26000341CE2 /* SwiftBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03BD4AA92B3CB26000341CE2 /* SwiftBankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBankApp.swift; sourceTree = "<group>"; };
+		03BD4AAD2B3CB26400341CE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03BD4AB02B3CB26400341CE2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		03BD4ABC2B3CC72000341CE2 /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
+		03E5D8DC2B40D79A00B9BC9A /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
+		03E5D8DF2B4213BD00B9BC9A /* GenericView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericView.swift; sourceTree = "<group>"; };
+		03E5D8E72B425BC700B9BC9A /* ActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesView.swift; sourceTree = "<group>"; };
+		03E5D8ED2B45E20F00B9BC9A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		03E5D8F32B45E32B00B9BC9A /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		03E5D8F52B45E48A00B9BC9A /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		03E5D8F72B45E4F400B9BC9A /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		03E5D8F92B45E50D00B9BC9A /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		03E5D8FB2B45E52F00B9BC9A /* HomeEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEndpoint.swift; sourceTree = "<group>"; };
+		03E5D8FD2B45E64800B9BC9A /* HomeNetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNetworkingService.swift; sourceTree = "<group>"; };
+		03E5D8FF2B45F3C800B9BC9A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		204AC6738038DFFCC0883BC5 /* Pods-SwiftBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBank.debug.xcconfig"; path = "Target Support Files/Pods-SwiftBank/Pods-SwiftBank.debug.xcconfig"; sourceTree = "<group>"; };
+		2D5AA9D696F0795121CC2D6B /* Pods_SwiftBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		982BB44C2C50049B00AE59E0 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		982BB44E2C5004AF00AE59E0 /* TextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModel.swift; sourceTree = "<group>"; };
+		982BB4502C512F7A00AE59E0 /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
+		982BB4552C51320600AE59E0 /* DictionaryDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryDecodable.swift; sourceTree = "<group>"; };
+		982BB4582C51390000AE59E0 /* BalanceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceResponse.swift; sourceTree = "<group>"; };
+		982BB45A2C513B9500AE59E0 /* GenericSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSectionView.swift; sourceTree = "<group>"; };
+		982BB45C2C513BD200AE59E0 /* BalanceSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceSection.swift; sourceTree = "<group>"; };
+		982BB45F2C52991D00AE59E0 /* CreditCardResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardResponse.swift; sourceTree = "<group>"; };
+		982BB4612C5299DB00AE59E0 /* CreditCardSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardSection.swift; sourceTree = "<group>"; };
+		982BB4642C529F7400AE59E0 /* GenericSectionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSectionResponse.swift; sourceTree = "<group>"; };
+		982BB4662C529FCA00AE59E0 /* GenericSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSection.swift; sourceTree = "<group>"; };
+		982BB4682C54197B00AE59E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		982BB46A2C541E4C00AE59E0 /* NavigationRounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRounter.swift; sourceTree = "<group>"; };
+		982BB46C2C54205200AE59E0 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		982BB46E2C54210400AE59E0 /* PixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixView.swift; sourceTree = "<group>"; };
+		982BB4702C54248E00AE59E0 /* RouterHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterHandler.swift; sourceTree = "<group>"; };
+		982BB4722C57FAE500AE59E0 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
+		982BB4742C58020100AE59E0 /* GenericErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericErrorView.swift; sourceTree = "<group>"; };
+		E034E032CC338AB99AA10A97 /* Pods-SwiftBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBank.release.xcconfig"; path = "Target Support Files/Pods-SwiftBank/Pods-SwiftBank.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03BD4AA32B3CB26000341CE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E5DF8D5D4CCC73B7463B7E /* Pods_SwiftBank.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03BD4A9D2B3CB26000341CE2 = {
+			isa = PBXGroup;
+			children = (
+				03BD4AA82B3CB26000341CE2 /* SwiftBank */,
+				03BD4AA72B3CB26000341CE2 /* Products */,
+				65814436CD677EF8F0171C9D /* Pods */,
+				453737A848AFB8DA9336DF7B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		03BD4AA72B3CB26000341CE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03BD4AA62B3CB26000341CE2 /* SwiftBank.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03BD4AA82B3CB26000341CE2 /* SwiftBank */ = {
+			isa = PBXGroup;
+			children = (
+				982BB4682C54197B00AE59E0 /* Info.plist */,
+				03BD4AA92B3CB26000341CE2 /* SwiftBankApp.swift */,
+				03BD4AB72B3CB2F500341CE2 /* Home */,
+				03E5D8EF2B45E25100B9BC9A /* Networking */,
+				982BB4692C541E0E00AE59E0 /* Navigation */,
+				03BD4AAD2B3CB26400341CE2 /* Assets.xcassets */,
+				03BD4AAF2B3CB26400341CE2 /* Preview Content */,
+			);
+			path = SwiftBank;
+			sourceTree = "<group>";
+		};
+		03BD4AAF2B3CB26400341CE2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				03BD4AB02B3CB26400341CE2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		03BD4AB72B3CB2F500341CE2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				982BB44B2C50047700AE59E0 /* Models */,
+				03E5D8EC2B45E1F200B9BC9A /* ViewModel */,
+				03E5D8E22B421EB400B9BC9A /* Views */,
+				982BB4542C5131C300AE59E0 /* Extensions */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		03BD4ABB2B3CC70200341CE2 /* Balance */ = {
+			isa = PBXGroup;
+			children = (
+				03BD4ABC2B3CC72000341CE2 /* BalanceView.swift */,
+			);
+			path = Balance;
+			sourceTree = "<group>";
+		};
+		03E5D8DB2B40D76E00B9BC9A /* CreditCard */ = {
+			isa = PBXGroup;
+			children = (
+				03E5D8DC2B40D79A00B9BC9A /* CreditCardView.swift */,
+			);
+			path = CreditCard;
+			sourceTree = "<group>";
+		};
+		03E5D8DE2B42138600B9BC9A /* GenericView */ = {
+			isa = PBXGroup;
+			children = (
+				03E5D8DF2B4213BD00B9BC9A /* GenericView.swift */,
+			);
+			path = GenericView;
+			sourceTree = "<group>";
+		};
+		03E5D8E22B421EB400B9BC9A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03E5D8FF2B45F3C800B9BC9A /* HomeView.swift */,
+				03E5D8E62B425B9100B9BC9A /* Activities */,
+				03BD4ABB2B3CC70200341CE2 /* Balance */,
+				03E5D8DB2B40D76E00B9BC9A /* CreditCard */,
+				03E5D8DE2B42138600B9BC9A /* GenericView */,
+				982BB45A2C513B9500AE59E0 /* GenericSectionView.swift */,
+				982BB46E2C54210400AE59E0 /* PixView.swift */,
+				982BB4742C58020100AE59E0 /* GenericErrorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		03E5D8E62B425B9100B9BC9A /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				03E5D8E72B425BC700B9BC9A /* ActivitiesView.swift */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		03E5D8EC2B45E1F200B9BC9A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				03E5D8ED2B45E20F00B9BC9A /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		03E5D8EF2B45E25100B9BC9A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				03E5D8F02B45E2F800B9BC9A /* Base */,
+				03E5D8F12B45E2FF00B9BC9A /* Endpoints */,
+				03E5D8F22B45E30E00B9BC9A /* Services */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		03E5D8F02B45E2F800B9BC9A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				03E5D8F32B45E32B00B9BC9A /* Endpoint.swift */,
+				03E5D8F92B45E50D00B9BC9A /* HTTPClient.swift */,
+				03E5D8F72B45E4F400B9BC9A /* RequestError.swift */,
+				03E5D8F52B45E48A00B9BC9A /* RequestMethod.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		03E5D8F12B45E2FF00B9BC9A /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				03E5D8FB2B45E52F00B9BC9A /* HomeEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		03E5D8F22B45E30E00B9BC9A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				03E5D8FD2B45E64800B9BC9A /* HomeNetworkingService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		453737A848AFB8DA9336DF7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D5AA9D696F0795121CC2D6B /* Pods_SwiftBank.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65814436CD677EF8F0171C9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				204AC6738038DFFCC0883BC5 /* Pods-SwiftBank.debug.xcconfig */,
+				E034E032CC338AB99AA10A97 /* Pods-SwiftBank.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		982BB44B2C50047700AE59E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				982BB44C2C50049B00AE59E0 /* HomeModel.swift */,
+				982BB44E2C5004AF00AE59E0 /* TextModel.swift */,
+				982BB4502C512F7A00AE59E0 /* SectionModel.swift */,
+				982BB4572C5138D900AE59E0 /* Balance */,
+				982BB45E2C52990100AE59E0 /* CreditCard */,
+				982BB4632C529F4D00AE59E0 /* GenericSection */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		982BB4542C5131C300AE59E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				982BB4552C51320600AE59E0 /* DictionaryDecodable.swift */,
+				982BB4722C57FAE500AE59E0 /* URLExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		982BB4572C5138D900AE59E0 /* Balance */ = {
+			isa = PBXGroup;
+			children = (
+				982BB4582C51390000AE59E0 /* BalanceResponse.swift */,
+				982BB45C2C513BD200AE59E0 /* BalanceSection.swift */,
+			);
+			path = Balance;
+			sourceTree = "<group>";
+		};
+		982BB45E2C52990100AE59E0 /* CreditCard */ = {
+			isa = PBXGroup;
+			children = (
+				982BB45F2C52991D00AE59E0 /* CreditCardResponse.swift */,
+				982BB4612C5299DB00AE59E0 /* CreditCardSection.swift */,
+			);
+			path = CreditCard;
+			sourceTree = "<group>";
+		};
+		982BB4632C529F4D00AE59E0 /* GenericSection */ = {
+			isa = PBXGroup;
+			children = (
+				982BB4642C529F7400AE59E0 /* GenericSectionResponse.swift */,
+				982BB4662C529FCA00AE59E0 /* GenericSection.swift */,
+			);
+			path = GenericSection;
+			sourceTree = "<group>";
+		};
+		982BB4692C541E0E00AE59E0 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				982BB46A2C541E4C00AE59E0 /* NavigationRounter.swift */,
+				982BB46C2C54205200AE59E0 /* Route.swift */,
+				982BB4702C54248E00AE59E0 /* RouterHandler.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03BD4AA52B3CB26000341CE2 /* SwiftBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03BD4AB42B3CB26400341CE2 /* Build configuration list for PBXNativeTarget "SwiftBank" */;
+			buildPhases = (
+				CC64F32ABD2209E61F72100A /* [CP] Check Pods Manifest.lock */,
+				03BD4AA22B3CB26000341CE2 /* Sources */,
+				03BD4AA32B3CB26000341CE2 /* Frameworks */,
+				03BD4AA42B3CB26000341CE2 /* Resources */,
+				4D8966F3EAD69F1A9FBF1EA3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftBank;
+			productName = SwiftBank;
+			productReference = 03BD4AA62B3CB26000341CE2 /* SwiftBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03BD4A9E2B3CB26000341CE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					03BD4AA52B3CB26000341CE2 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 03BD4AA12B3CB26000341CE2 /* Build configuration list for PBXProject "SwiftBank" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03BD4A9D2B3CB26000341CE2;
+			productRefGroup = 03BD4AA72B3CB26000341CE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03BD4AA52B3CB26000341CE2 /* SwiftBank */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03BD4AA42B3CB26000341CE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03BD4AB12B3CB26400341CE2 /* Preview Assets.xcassets in Resources */,
+				03BD4AAE2B3CB26400341CE2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D8966F3EAD69F1A9FBF1EA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftBank/Pods-SwiftBank-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftBank/Pods-SwiftBank-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftBank/Pods-SwiftBank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC64F32ABD2209E61F72100A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftBank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03BD4AA22B3CB26000341CE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03BD4ABD2B3CC72000341CE2 /* BalanceView.swift in Sources */,
+				982BB4712C54248E00AE59E0 /* RouterHandler.swift in Sources */,
+				03E5D8EE2B45E20F00B9BC9A /* HomeViewModel.swift in Sources */,
+				982BB4752C58020100AE59E0 /* GenericErrorView.swift in Sources */,
+				03E5D8FA2B45E50D00B9BC9A /* HTTPClient.swift in Sources */,
+				982BB44D2C50049B00AE59E0 /* HomeModel.swift in Sources */,
+				982BB4592C51390000AE59E0 /* BalanceResponse.swift in Sources */,
+				982BB4602C52991D00AE59E0 /* CreditCardResponse.swift in Sources */,
+				03E5D8F42B45E32B00B9BC9A /* Endpoint.swift in Sources */,
+				03E5D8F62B45E48A00B9BC9A /* RequestMethod.swift in Sources */,
+				03BD4AAA2B3CB26000341CE2 /* SwiftBankApp.swift in Sources */,
+				03E5D8DD2B40D79A00B9BC9A /* CreditCardView.swift in Sources */,
+				982BB45B2C513B9500AE59E0 /* GenericSectionView.swift in Sources */,
+				03E5D8FC2B45E52F00B9BC9A /* HomeEndpoint.swift in Sources */,
+				03E5D8F82B45E4F400B9BC9A /* RequestError.swift in Sources */,
+				982BB4512C512F7A00AE59E0 /* SectionModel.swift in Sources */,
+				982BB44F2C5004AF00AE59E0 /* TextModel.swift in Sources */,
+				982BB4672C529FCA00AE59E0 /* GenericSection.swift in Sources */,
+				03E5D8E82B425BC700B9BC9A /* ActivitiesView.swift in Sources */,
+				982BB4732C57FAE500AE59E0 /* URLExtension.swift in Sources */,
+				982BB46D2C54205200AE59E0 /* Route.swift in Sources */,
+				982BB46F2C54210400AE59E0 /* PixView.swift in Sources */,
+				982BB46B2C541E4C00AE59E0 /* NavigationRounter.swift in Sources */,
+				982BB4562C51320600AE59E0 /* DictionaryDecodable.swift in Sources */,
+				982BB45D2C513BD200AE59E0 /* BalanceSection.swift in Sources */,
+				982BB4622C5299DB00AE59E0 /* CreditCardSection.swift in Sources */,
+				03E5D9002B45F3C800B9BC9A /* HomeView.swift in Sources */,
+				982BB4652C529F7400AE59E0 /* GenericSectionResponse.swift in Sources */,
+				03E5D8FE2B45E64800B9BC9A /* HomeNetworkingService.swift in Sources */,
+				03E5D8E02B4213BD00B9BC9A /* GenericView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		03BD4AB22B3CB26400341CE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03BD4AB32B3CB26400341CE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03BD4AB52B3CB26400341CE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 204AC6738038DFFCC0883BC5 /* Pods-SwiftBank.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftBank/Preview Content\"";
+				DEVELOPMENT_TEAM = LF4G5DZZMF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftBank/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.afc.SwiftBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03BD4AB62B3CB26400341CE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E034E032CC338AB99AA10A97 /* Pods-SwiftBank.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftBank/Preview Content\"";
+				DEVELOPMENT_TEAM = LF4G5DZZMF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftBank/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.afc.SwiftBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03BD4AA12B3CB26000341CE2 /* Build configuration list for PBXProject "SwiftBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03BD4AB22B3CB26400341CE2 /* Debug */,
+				03BD4AB32B3CB26400341CE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03BD4AB42B3CB26400341CE2 /* Build configuration list for PBXNativeTarget "SwiftBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03BD4AB52B3CB26400341CE2 /* Debug */,
+				03BD4AB62B3CB26400341CE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03BD4A9E2B3CB26000341CE2 /* Project object */;
+}
